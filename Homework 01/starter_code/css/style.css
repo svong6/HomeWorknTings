@@ -1,4 +1,5 @@
 
+
 body {
     color: #05080C;
     background: F6F6F6;
@@ -33,3 +34,21 @@ article img {
     background: #eeeeee;
     padding: 10px;
   }
+  a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: blueviolet;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
