@@ -1,0 +1,35 @@
+
+body {
+    color: #05080C;
+    background: F6F6F6;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+p {
+    font-family: Georgia, Times New Roman, Serif;
+}
+
+header {
+    border-top: 5px solid #222222;
+}
+
+article {
+    border-bottom: 5px solid #222222;
+}
+
+article img {
+    float: right;
+    margin-left: 20px;
+  }
+  
+  th {
+    background: #222222;
+    color: white;
+    padding: 10px;
+  }
+  
+  td {
+    background: #eeeeee;
+    padding: 10px;
+  }
