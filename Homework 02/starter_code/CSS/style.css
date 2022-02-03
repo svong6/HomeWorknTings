@@ -64,7 +64,7 @@ p {
 
 .main-nav li {
 
-  padding-left: 15px;
+  padding-left: 50px;
 }
 
 .main-nav li,
@@ -85,7 +85,7 @@ p {
 }
 
 .secondary-text {
-  background-color: #adadad;
+  background-color: lightgray;
   font-weight: bold;
   font-style: italic;
   text-align: center;
@@ -146,7 +146,7 @@ p {
 
 .featured-block .cta {
   background-color: grey;
-  border-bottom: 2px solid powderblue;
+  border-bottom: 2px solid plum;
 }
 
 .three-wide {
@@ -155,7 +155,7 @@ p {
 }
 
 .third-container {
-  border-right: 1px solid powderblue;
+  border-right: 1px solid violet;
   margin: 10px 0;
   padding: 2%;
 }
