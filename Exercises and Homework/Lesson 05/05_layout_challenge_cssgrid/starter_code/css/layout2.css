@@ -1,0 +1,28 @@
+
+.exerciseHeader, .exerciseFooter, .exerciseMain {
+    margin: 0 10px 10px 10px;
+}
+
+.exerciseMain {
+    display: grid;
+    grid-template-columns: 100px 250px 100px;
+    grid-column-gap: 10px;
+    
+  
+    
+
+
+   
+    
+
+}
+
+.exerciseMainContent {
+  
+
+}
+
+.exerciseMainAside {
+    
+
+}
