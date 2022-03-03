@@ -1,6 +1,7 @@
 
 /* Header & Top Navigation */
 
+
 .pbeTopHeader {
     background: black;
     margin: 0;
@@ -16,6 +17,7 @@
 
 .pbeTopHeaderSiteLogo {
     margin: 10px 20px 10px 0;
+    max-width: 70px;
 }
 
 .pbeTopHeaderSiteNavigation {
