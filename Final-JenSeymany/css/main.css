@@ -1,0 +1,730 @@
+
+
+/* Globals */
+/*ffont-family: 'Abril Fatface', cursive;
+font-family: 'Arimo', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'BhuTuka Expanded One', cursive;
+font-family: 'Montserrat', sans-serif;*/
+/* * {
+  box-sizing: border-box;
+ border: red 1px solid;  
+
+} */
+
+body {
+  font-family: "roboto";
+  font-size: 18px;
+  color: #1b1f23;
+  margin:0;
+  height:auto;
+  display:block;
+  width:100%;
+  overflow-x:hidden;
+ 
+}
+
+img{
+max-width: 100%;
+
+}
+
+a:visited {
+  color: blue;
+  text-decoration:none;
+}
+
+a:hover {
+  color: #033641;
+}
+
+.container_fixed {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+.btn,
+.btn:visited {
+  display: block;
+  background:black;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 20px;
+
+
+  
+ 
+ 
+}
+
+.btn:hover {
+  background: crimson;
+  color:white;
+}
+
+
+
+.site_header_inner {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.site_header img {
+  width: 180px;
+}
+
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 1rem;
+  
+  
+  
+}
+
+.navigation .sign_up {
+  display: flex;
+  justify-content: space-around;
+  padding:0;
+ 
+ 
+}
+
+.navlink {
+  list-style: none;
+  margin: 0 0 0 30px;
+}
+
+/* .sign_up {
+  margin-left: 250px;
+} */
+
+.navlink a {
+  color: slategray;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+
+
+.burger {
+  font-size: 1.2em;
+  display: none;
+  cursor:pointer;
+}
+
+
+
+/* Hero */
+.main_pic_palms {
+  overflow: hidden;
+  min-height: 360px;
+  background: url("../img/valley.png") no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+  color: black;
+  font-family: 'Bebas Neue';
+  margin-top: -100px; 
+  background-position: center;
+ 
+}
+
+
+
+
+
+
+.jenn_hero_container img {
+  width:30%;
+  height:20%;
+  margin-top: 100px;
+  
+
+
+
+}
+
+.hero_hdr {
+  font-size: 3rem;
+  font-family:"arimo";
+  white-space: nowrap;
+ 
+  
+}
+
+  
+
+
+.hero_tagline {
+  font-size: 20px;
+  line-height: 135%;
+  font-family: "arimo";
+  
+ 
+  
+  
+  
+ 
+}
+
+
+
+
+
+
+
+  .hero_callout {
+    width:auto;
+    max-width:100%;
+    padding: 20px;
+    
+    
+    
+  }
+
+
+  
+  .hero_tagline {
+    font-size: 1.5rem; 
+    font-weight:bold;  
+  
+  }
+
+  .jenn__hero_container {
+    display:grid;
+    gap:1rem;
+    overflow:hidden;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+  }
+
+
+
+
+
+
+/*Facts */
+
+
+.section_hdr {
+  text-align:right;
+}
+.section_hdr > div {
+  vertical-align:5px;
+  display:inline-block;   
+  font-family: "arimo";
+  font-size: 20px;
+  
+}
+
+
+   
+
+/* form */
+label {
+display: block;
+letter-spacing: 4px;
+padding-top: 40px;
+text-align: center;
+background-color: black;
+position: relative; 
+width: 300px;
+height: 100px;
+
+  
+}
+
+/* animation for the label text to return to normal after 
+user clicks away from the input box */
+label .label-text {
+  color: #9B9B9B;
+  cursor: text;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  transform: translateY(-34px);
+  transition: all 0.3s;
+}
+/* animation for the text to float up and turn white */
+label input:focus + .label-text {
+  color: #F0F0F0;
+  font-size: 13px;
+  margin-top: 20px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+/* remove the input box styling */
+label input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #4A4A4A;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  padding: 5px 20px;
+  text-align: center;
+  transition: all 0.3s;
+  width: 200px;
+}
+/* once you click in the input the input width box animates */
+label input:focus {
+  max-width: 100%;
+  width: 400px;
+}
+
+/* the text floats up during form validation */
+label input:valid + .label-text {
+  font-size: 13px;
+  -moz-transform: translateY(-74px);
+  -ms-transform: translateY(-74px);
+  -webkit-transform: translateY(-74px);
+  transform: translateY(-74px);
+}
+
+/* button styling */
+button {
+  background: firebrick;
+  color: white;
+  border: 2px solid #F0F0F0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 20px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+ -moz-transition: all 0.4s;
+ transition: all 0.4s;
+ position: relative; 
+
+}
+button:hover, button:focus {
+  background-color: white;
+  color: black;
+}
+
+/* end form */
+
+
+
+ 
+
+/* reviews */
+
+  .zillow-quote{
+    border: 1px solid grey;
+    width: 75%;
+
+
+  }
+
+
+
+  .zillow_action_quote_container {
+    background: white;
+    max-width: 700px;
+    padding: 20px;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 100%;
+    /* Offset */
+    margin-top: 70px;
+
+    }
+    .map-container{
+      overflow:hidden;
+      position:relative;
+      height:0;
+      margin-left: -80%;
+      float: top;
+       
+     
+     
+     
+    }
+
+      .map-container iframe{
+        left: 50%;;
+        top:0;
+        height:80%;
+        width:45%;
+        position:absolute;
+        
+        }
+
+        
+        .form-contact{
+          display: flex;
+          justify-content: center;
+          padding-top: 20px;
+        }
+
+
+      .jen-pic-profile{
+      margin-left:80%;
+      margin-top: 0%
+     
+
+
+
+      }
+
+      .contact-card{
+        background: white;
+        width: auto;
+        border: 1px solid black;
+        padding: 20px;
+        color: black;
+        font-family: "arimo";
+        font-size: 18px
+        
+          
+      
+      
+      }
+    
+      .jen-details{
+       display: grid;
+       grid-template-columns: 3fr 1fr; 
+       font-family: "arimo";
+       
+
+      }
+
+
+      .jen-contact{
+        /* display: grid; 
+        justify-content: center;
+        /* flex-wrap: wrap; 
+        grid-template-columns: 1fr;*/
+        margin: auto;
+
+      }
+         
+      .about-jen{
+       padding-right: 20px; 
+
+
+      }
+      
+      .testimony{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        margin-top: 30px;
+      }
+
+
+.zillow_action_shot > img {
+  display:none;
+  max-width: 100%;
+}
+
+
+.zillow_action_dash {
+  height: 40px;
+  width: 350px;
+  
+}
+
+.zillow_quote {
+  font-family: "armimo";
+  
+}
+
+.zillow_quote span {
+  color: #10a3c2;
+  
+}
+
+
+
+.zillow_action_quote_tagline {
+  font-size: 1.2rem;
+  
+
+}
+
+
+
+
+/* house pics */
+.temecula{
+  background: url("../img/temecula.png") no-repeat;  
+  background-size: 120%;
+  
+  }
+  .murrieta {
+    background: url("../img/murrieta.png") no-repeat;  
+    background-size: 120%;
+  }
+    
+  .hemet {
+    background: url("../img/hemet.png") no-repeat;  
+    background-size: 120%;
+  }
+  
+  
+  .listing-indiv-neighborhood-title {
+    font-size: 24px;
+    margin-bottom: auto;
+    font-family: "arimo";
+    
+    
+    
+
+  }
+  
+
+/* Listings */
+.listing-neighborhood-container {
+  padding: 50px 5px;
+  font-family: "Roboto', sans-serif";
+  margin-top: 70px;
+ 
+ 
+
+}
+
+.listing-neighborhood-title {
+  font-size: 52px;
+  text-align: center;
+  line-height: 20%;
+  font-family: "Bebas Neue";
+  
+  
+
+  
+}
+
+.listing-neighborhood-subtitle {
+  font-size: 32px;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20%;
+  
+  
+ 
+  
+  
+
+}
+
+.listing-three-neighborhood-container {
+  justify-content: center;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "arimo";
+  
+
+}
+ 
+.listing-indiv-neighborhood-container {
+  margin: 1%;
+  width: 30%;
+  text-align: center;
+  
+  
+}
+
+
+
+/* Note that here we are doing nested flex boxes */
+.listing-indiv-neighborhood-header-content{
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* approximate estimate */
+  justify-content: space-around;
+  text-align: center;
+  line-height: 30%;
+  
+  
+}
+.list-houses {
+  background-color: var(--background-light-gray);
+  border: 1px solid var(--border-light-gray);
+  line-height: 1.4;
+  margin: 0;
+  min-height: 50px; /* makes the detail boxes look uniform */
+  padding: 20px;
+}
+
+
+
+
+
+.btn:hover {
+  background: crimson;
+  color:white;
+ 
+}
+
+.san-footer {
+  
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  
+}
+.san-footer > img{
+  height: 100px;
+
+}
+.san-copyright{
+margin-bottom: 230px;
+
+
+}
+  
+
+
+@media screen and (min-width:761px) {
+  .btn_hero {
+    width: 200px;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  header {
+    background: white;
+  }
+
+  .burger {
+      display: block;
+      margin-right: 30px;
+      color: black;
+      font-size: 20px;
+  }
+  .navigation {
+      right: 0;
+      margin: 0;
+      background: #343434;
+      position: absolute;
+      top: 70px;
+      width:0;
+      height:0;
+      flex-direction: column;
+      justify-content: normal;
+      overflow:hidden;
+      transition: all 400ms;
+      
+  }
+
+
+  .navlink {
+      text-align: center;
+      margin: 0;
+  }
+  .navlink a:link,
+  .navlink a:visited {
+    color: white;
+  }
+  .nav_active {
+      width: 50%;
+      height: calc(100% - 70px);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .zillow_action_shot {
+    background: none;
+    padding: 0;
+  }
+
+  .logo{
+    margin-left: 0;
+  }
+
+  .keller_logo{
+    margin-right: 0;
+    margin-top: 0;
+
+  }
+  .zillow_action_shot > img {
+    display:block;
+    
+  } 
+  .jenn_hero_container {
+    padding:0;
+    background:none;
+  }
+  .hero_hdr{
+    white-space: normal;
+    margin-left: 0;
+    text-align: center;
+    color: black;
+
+  }
+  .hero_tagline{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+  }.btn, .btn:visited{
+    float: none;
+    width: 60%;
+    position: relative;
+    left: 0;
+    margin: 0 auto;
+  }
+.jen-details, .testimony{
+  grid-template-columns: 1fr;
+  padding: 7px;
+
+}
+    
+.section_hdr{
+  text-align: center;
+}
+.zillow_action_quote_container{
+  margin-left: 0;
+  margin-top: 100px;
+}
+label{
+  position: relative;
+  top: 0;
+  margin-left: 0;
+}
+button{
+  top: 0;
+  margin-left: 0;
+}
+.san-copyright{
+  margin-left: 0;
+}
+}
